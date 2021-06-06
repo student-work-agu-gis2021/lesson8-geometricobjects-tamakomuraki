@@ -43,6 +43,17 @@ In problem 3, our goal is to read in the data using Pandas and create two lists 
 #YOUR CODE HERE 1 to read the file
 import pandas as pd 
 ```
+import pandas as pd
+from shapely.geometry import Point, LineString, Polygon
+from pyproj import CRS
+import matplotlib.pyplot as plt
+data = pd.read_csv('data/travelTimes_2015_Helsinki.txt')
+
+make_point = lambda row:Point(row['lat'],row['lon'])
+data['geometry'] = data.apply(make_point, axis=1)
+
+
+geo = gpd.GeoDataFrame(data, geometry='geometry',crs=CRS.from_epsg(4326).to_wkt())
 
 
 ```python
@@ -65,7 +76,7 @@ print(data.head())
 ```python
 # YOUR CODE HERE 2 to set `data`
 ```
-
+geo.plot()
 
 ```python
 # CODE FOR TESTING YOUR SOLUTION
