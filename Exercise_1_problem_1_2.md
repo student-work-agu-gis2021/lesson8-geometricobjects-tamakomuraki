@@ -10,9 +10,15 @@ In this problem you will create custom-made functions for creating geometries. W
 ```python
 from shapely.geometry import Point, LineString, Polygon
 # YOUR CODE HERE 1 to define create_point_geom()
-```
+"""
+parameter:x,y
+Purpose : create Point
+"""
+point = point(x_coord,y_coord)
+return(point)
 
-Test your function by running these code cells:
+
+# Test your function by running these code cells:
 
 
 ```python
