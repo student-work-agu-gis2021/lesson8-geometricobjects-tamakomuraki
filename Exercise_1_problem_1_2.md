@@ -125,7 +125,7 @@ Demonstrate the usage of the function. For example, create a Polygon with three 
 # YOUR CODE HERE 5 to define poly1 with three points
 # poly1 = 
 ```
-
+poly1 = create_poly_geom([(45.2,22.34),(100.22,-3.20),(70.0,10.20)])
 
 ```python
 # CODE FOR TESTING YOUR SOLUTION
@@ -137,7 +137,7 @@ print(poly1)
 print(poly1.geom_type)
 ```
 
-Check if your function checks the length of the input correctly by running this code cell:
+# Check if your function checks the length of the input correctly by running this code cell:
 
 
 ```python
