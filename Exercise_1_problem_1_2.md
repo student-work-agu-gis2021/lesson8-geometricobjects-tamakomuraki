@@ -66,8 +66,9 @@ Demonstrate the usage of your function; For example, create a line object with t
 line1 = None
 # YOUR CODE HERE 3 to define two points and store the result in line1
 ```
+line1 = lineString([Point(45.2,22.34),Point(100.22,-3.20)])
 
-Run these code to check your solution:
+# Run these code to check your solution:
 
 
 ```python
